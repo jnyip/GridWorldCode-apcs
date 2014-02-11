@@ -5,6 +5,13 @@ public class DancingBug extends Bug
 {
     private int[] Directions;
     private int i=0;
+    public int turn(int i){
+	int b = i;
+	while(b > 0){
+	    setDirection(getDirection() + 45);
+	    b-=1;
+	}
+    }
     public DancingBug(int[] nums)
     {
 	Directions = nums;
@@ -12,7 +19,7 @@ public class DancingBug extends Bug
     public void act()
     {
         if(i<Directions.length){
-	    setDirection(Directions[i]);
+	    Rotate(Directions[i]);
 	    if (canMove()){
 		move();
 		i++;

@@ -8,7 +8,7 @@ public class DancingBugRunner
 {
     public static void main(String[] args)
     {
-	int[] directions = {45,225,180,0,315,90,180,225,270,45,90};
+	int[] directions = {2,7,9,1,5,6,3,9,4,2,1,4,3,2};
         ActorWorld world = new ActorWorld();
         DancingBug alice = new DancingBug(directions);
         alice.setColor(Color.ORANGE);
